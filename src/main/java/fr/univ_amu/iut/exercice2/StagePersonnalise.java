@@ -1,15 +1,18 @@
 package fr.univ_amu.iut.exercice2;
-
+import javafx.stage.StageStyle;
 import javafx.application.Application;
 import javafx.stage.Stage;
 
 /**
  * Exercice 2 - Stage personnalisé.
  *
- * <p>Objectif : personnaliser la fenêtre (titre, dimensions, redimensionnement, style de
+ * <p>
+ * Objectif : personnaliser la fenêtre (titre, dimensions, redimensionnement,
+ * style de
  * décoration).
  *
- * <p>Concepts : propriétés de {@link Stage}, {@link javafx.stage.StageStyle}.
+ * <p>
+ * Concepts : propriétés de {@link Stage}, {@link javafx.stage.StageStyle}.
  */
 public class StagePersonnalise extends Application {
 
@@ -18,13 +21,19 @@ public class StagePersonnalise extends Application {
     // TODO exercice 2 : personnaliser le Stage.
     //
     // Les tests attendent, dans l'ordre conseillé :
-    //   1. setTitle("Ma fenêtre personnalisée")
-    //   2. setWidth(500) et setHeight(300)
-    //   3. setResizable(false)
-    //   4. initStyle(StageStyle.UNDECORATED)   ← à appeler avant show()
+    // 1. setTitle("Ma fenêtre personnalisée")
+    // 2. setWidth(500) et setHeight(300)
+    // 3. setResizable(false)
+    // 4. initStyle(StageStyle.UNDECORATED) ← à appeler avant show()
     //
     // Active les tests un à un (retire @Disabled) et implémente au fur et
     // à mesure. N'oublie pas d'appeler show() à la fin.
+    primaryStage.setTitle("Ma fenêtre personnalisée");
+    primaryStage.setWidth(500.0
+    primaryStage.setHeight(300.0);
+    primaryStage.setResizable(false);
+    primaryStage.initStyle(StageStyle.UNDECORATED);
+    primaryStage.show();
   }
 
   public static void main(String[] args) {
